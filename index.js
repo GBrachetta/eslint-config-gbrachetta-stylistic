@@ -127,7 +127,7 @@ module.exports = {
     ],
     "@stylistic/block-spacing": [2],
     "@stylistic/brace-style": [2],
-    "@stylistic/comma-dangle": [2, "always-multiline"],
+    "@stylistic/comma-dangle": 0,
     "@stylistic/comma-spacing": [
       2,
       {
@@ -138,7 +138,7 @@ module.exports = {
     "@stylistic/comma-style": [2, "last"],
     "@stylistic/computed-property-spacing": [2, "never"],
     "@stylistic/dot-location": [2, "property"],
-    "@stylistic/eol-last": [2, "always"],
+    "@stylistic/eol-last": 0,
     "@stylistic/function-call-argument-newline": [2, "consistent"],
     "@stylistic/function-call-spacing": [2, "never"],
     "@stylistic/function-paren-newline": [2, "multiline-arguments"],
@@ -295,7 +295,7 @@ module.exports = {
         allowIndentationTabs: true,
       },
     ],
-    "@stylistic/no-trailing-spaces": [2],
+    "@stylistic/no-trailing-spaces": 0,
     "@stylistic/no-whitespace-before-property": [2],
     "@stylistic/nonblock-statement-body-position": [2, "beside"],
     "@stylistic/object-curly-newline": [
@@ -323,7 +323,7 @@ module.exports = {
       },
     ],
     "@stylistic/one-var-declaration-per-line": [2, "always"],
-    "@stylistic/operator-linebreak": [2, "none"],
+    "@stylistic/operator-linebreak": 0,
     "@stylistic/padded-blocks": [2, "never"],
     "@stylistic/padding-line-between-statements": [
       2,
