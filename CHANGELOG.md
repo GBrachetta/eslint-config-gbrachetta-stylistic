@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.7] — 2023-12-19
+
+- Removed conflicting rules
+
 ## [0.0.6] — 2023-12-19
 
 - Lowered severity of stylistic rules

@@ -3,38 +3,23 @@ module.exports = {
     es6: true,
   },
 
-  extends: [
-    "plugin:css-import-order/recommended",
-    "plugin:tailwindcss/recommended",
-  ],
+  extends: ["plugin:css-import-order/recommended", "plugin:tailwindcss/recommended"],
   overrides: [
     {
-      extends: [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:import/typescript",
-      ],
+      extends: ["plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
       files: ["*.ts", "*.tsx"],
       parser: require.resolve("@typescript-eslint/parser"),
       plugins: ["@typescript-eslint/eslint-plugin"],
       rules: {
         "@typescript-eslint/adjacent-overload-signatures": "warn",
         "@typescript-eslint/array-type": "warn",
-        "@typescript-eslint/consistent-type-assertions": [
-          "warn",
-          { assertionStyle: "as" },
-        ],
+        "@typescript-eslint/consistent-type-assertions": ["warn", { assertionStyle: "as" }],
         "@typescript-eslint/member-delimiter-style": "warn",
         "@typescript-eslint/no-dynamic-delete": "warn",
-        "@typescript-eslint/no-empty-interface": [
-          "warn",
-          { allowSingleExtends: true },
-        ],
+        "@typescript-eslint/no-empty-interface": ["warn", { allowSingleExtends: true }],
         "@typescript-eslint/no-extra-non-null-assertion": "warn",
         "@typescript-eslint/no-extraneous-class": "warn",
-        "@typescript-eslint/no-unused-vars": [
-          "warn",
-          { argsIgnorePattern: "^_" },
-        ],
+        "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
         "@typescript-eslint/no-use-before-define": [
           "error",
           {
@@ -65,10 +50,7 @@ module.exports = {
       files: ["*.config.js", ".*rc.js"],
       rules: {
         "import/no-commonjs": "off",
-        "import/no-extraneous-dependencies": [
-          "error",
-          { devDependencies: true },
-        ],
+        "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
       },
     },
   ],
@@ -95,7 +77,7 @@ module.exports = {
 
   rules: {
     "@stylistic/array-bracket-newline": [
-      1,
+      0,
       {
         minItems: 5,
         multiline: true,
@@ -145,7 +127,7 @@ module.exports = {
     ],
     "@stylistic/implicit-arrow-linebreak": [1, "beside"],
     "@stylistic/indent": 0,
-    "@stylistic/indent-binary-ops": [1, 2],
+    "@stylistic/indent-binary-ops": [0, 2],
     "@stylistic/jsx-child-element-spacing": 0,
     "@stylistic/jsx-closing-bracket-location": [1],
     "@stylistic/jsx-closing-tag-location": 1,
@@ -243,7 +225,15 @@ module.exports = {
     "@stylistic/max-len": [
       1,
       {
+        code: 80,
         comments: 80,
+        ignoreComments: false,
+        ignoreRegExpLiterals: false,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: false,
+        ignoreTrailingComments: false,
+        ignoreUrls: true,
+        tabWidth: 80,
       },
     ],
     "@stylistic/max-statements-per-line": [
@@ -400,39 +390,30 @@ module.exports = {
           caseInsensitive: true,
           order: "asc",
         },
-        groups: [
-          "builtin",
-          "external",
-          "internal",
-          ["sibling", "parent"],
-          "index",
-          "type",
-          "object",
-          "unknown",
-        ],
+        groups: ["builtin", "external", "internal", ["sibling", "parent"], "index", "type", "object", "unknown"],
         "newlines-between": "always",
       },
     ],
     "prefer-const": 1,
-    'prettier/prettier': [
+    "prettier/prettier": [
       1,
       {
-        arrowParens: 'always',
+        arrowParens: "always",
         bracketSameLine: false,
         bracketSpacing: true,
-        embeddedLanguageFormatting: 'auto',
-        htmlWhitespaceSensitivity: 'css',
+        embeddedLanguageFormatting: "auto",
+        htmlWhitespaceSensitivity: "css",
         insertPragma: false,
         jsxSingleQuote: false,
-        printWidth: 120,
-        proseWrap: 'preserve',
-        quoteProps: 'as-needed',
+        printWidth: 80,
+        proseWrap: "preserve",
+        quoteProps: "as-needed",
         requirePragma: false,
         semi: true,
         singleAttributePerLine: true,
         singleQuote: false,
         tabWidth: 2,
-        trailingComma: 'all',
+        trailingComma: "all",
         useTabs: false,
         vueIndentScriptAndStyle: false,
       },
@@ -469,10 +450,8 @@ module.exports = {
     "tailwindcss/no-custom-classname": [
       2,
       {
-        "whitelist": [
-          "bg\\-gradient\\-(conic|radial)"
-        ]
-      }
+        whitelist: ["bg\\-gradient\\-(conic|radial)"],
+      },
     ],
     "typescript-sort-keys/interface": 1,
   },
