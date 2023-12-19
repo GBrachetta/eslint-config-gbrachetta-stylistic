@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6] — 2023-12-19
+
+- Lowered severity of stylistic rules
+
 ## [0.0.5] — 2023-12-19
 
 - Remove stylistic rules conflicting with Prettier
