@@ -3,7 +3,10 @@ module.exports = {
     es6: true,
   },
 
-  extends: "plugin:css-import-order/recommended",
+  extends: [
+    "plugin:css-import-order/recommended",
+    "plugin:tailwindcss/recommended",
+  ],
   overrides: [
     {
       extends: [
