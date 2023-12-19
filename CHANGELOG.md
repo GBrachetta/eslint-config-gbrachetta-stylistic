@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.8] — 2023-12-19
+
+- Add eslint-plugin-unicorn
+
 ## [0.0.7] — 2023-12-19
 
 - Removed conflicting rules

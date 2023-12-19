@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     "plugin:css-import-order/recommended",
     "plugin:tailwindcss/recommended",
+    "plugin:unicorn/recommended",
   ],
   overrides: [
     {
@@ -308,6 +309,7 @@ module.exports = {
       1,
       "always",
       {
+        arraysInObjects: true,
         objectsInObjects: true,
       },
     ],
@@ -481,6 +483,25 @@ module.exports = {
       },
     ],
     "typescript-sort-keys/interface": 1,
+    "unicorn/empty-brace-spaces": 0,
+    "unicorn/prefer-module": 0,
+    "unicorn/prevent-abbreviations": [
+      2,
+      {
+        replacements: {
+          cmd: {
+            command: true,
+          },
+          e: false,
+          errCb: {
+            handleError: true,
+          },
+          props: false,
+          ref: false,
+          res: false,
+        },
+      },
+    ],
   },
   settings: {
     react: {
