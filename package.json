@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-gbrachetta-stylistic",
+  "version": "0.0.1",
+  "description": "Thorough TSLint configuration for React-based projects based on airbnb and @stylistic configs with many additional rules such as autofixable sorting, etc.",
+  "author": "Guillermo Brachetta <brachetta@me.com> (https://github.com/gbrachetta/)",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "javascript",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "airbnb-config",
+    "react",
+    "hooks",
+    "react-hooks",
+    "gbrachetta",
+    "guillermo brachetta",
+    "tslint"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-css-import-order": "^1.1.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "eslint-plugin-sort-exports": "^0.8.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.56.0"
+  }
+}
