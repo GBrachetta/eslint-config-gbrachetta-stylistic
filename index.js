@@ -150,9 +150,9 @@ module.exports = {
       },
     ],
     "@stylistic/implicit-arrow-linebreak": [2, "beside"],
-    "@stylistic/indent": [2, 2],
+    "@stylistic/indent": 0,
     "@stylistic/indent-binary-ops": [2, 2],
-    "@stylistic/jsx-child-element-spacing": [2],
+    "@stylistic/jsx-child-element-spacing": 0,
     "@stylistic/jsx-closing-bracket-location": [2],
     "@stylistic/jsx-closing-tag-location": [2],
     "@stylistic/jsx-curly-brace-presence": [
@@ -181,28 +181,9 @@ module.exports = {
         indentMode: 2,
       },
     ],
-    "@stylistic/jsx-max-props-per-line": [
-      2,
-      {
-        maximum: {
-          multi: 1,
-          single: 1,
-        },
-      },
-    ],
-    "@stylistic/jsx-newline": [
-      2,
-      {
-        allowMultilines: true,
-        prevent: true,
-      },
-    ],
-    "@stylistic/jsx-one-expression-per-line": [
-      2,
-      {
-        allow: "single-child",
-      },
-    ],
+    "@stylistic/jsx-max-props-per-line": 0,
+    "@stylistic/jsx-newline": 0,
+    "@stylistic/jsx-one-expression-per-line": 0,
     "@stylistic/jsx-props-no-multi-spaces": [2],
     "@stylistic/jsx-quotes": [2, "prefer-double"],
     "@stylistic/jsx-self-closing-comp": [2],
@@ -278,20 +259,7 @@ module.exports = {
         max: 2,
       },
     ],
-    "@stylistic/member-delimiter-style": [
-      2,
-      {
-        multiline: {
-          delimiter: "semi",
-          requireLast: true,
-        },
-        multilineDetection: "brackets",
-        singleline: {
-          delimiter: "semi",
-          requireLast: false,
-        },
-      },
-    ],
+    "@stylistic/member-delimiter-style": 0,
     "@stylistic/multiline-ternary": ["error", "always-multiline"],
     "@stylistic/new-parens": [2, "never"],
     "@stylistic/newline-per-chained-call": [
@@ -307,7 +275,7 @@ module.exports = {
         onlyOneSimpleParam: false,
       },
     ],
-    "@stylistic/no-extra-parens": [2],
+    "@stylistic/no-extra-parens": 0,
     "@stylistic/no-extra-semi": [2],
     "@stylistic/no-floating-decimal": [2],
     "@stylistic/no-mixed-operators": [2],
@@ -358,7 +326,7 @@ module.exports = {
     "@stylistic/operator-linebreak": [2, "none"],
     "@stylistic/padded-blocks": [2, "never"],
     "@stylistic/padding-line-between-statements": [
-      1,
+      2,
       {
         blankLine: "always",
         next: ["return", "export", "function", "block-like"],
@@ -391,9 +359,9 @@ module.exports = {
       },
     ],
     "@stylistic/quote-props": [2, "as-needed"],
-    "@stylistic/quotes": [2, "double"],
+    "@stylistic/quotes": 0,
     "@stylistic/rest-spread-spacing": [2, "never"],
-    "@stylistic/semi": [2, "always"],
+    "@stylistic/semi": 0,
     "@stylistic/semi-spacing": [
       2,
       {
@@ -468,7 +436,7 @@ module.exports = {
         htmlWhitespaceSensitivity: 'css',
         insertPragma: false,
         jsxSingleQuote: false,
-        printWidth: 80,
+        printWidth: 120,
         proseWrap: 'preserve',
         quoteProps: 'as-needed',
         requirePragma: false,
@@ -482,7 +450,7 @@ module.exports = {
       },
     ],
     "react/jsx-no-undef": 0,
-    "react/jsx-sort-props": 1,
+    "react/jsx-sort-props": 0,
     "react/no-unknown-property": 0,
     "react/self-closing-comp": 1,
     "sort-destructure-keys/sort-destructure-keys": [

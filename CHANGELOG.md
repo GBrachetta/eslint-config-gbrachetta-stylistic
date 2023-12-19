@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.4] — 2023-12-19
+
+- Remove stylistic rules conflicting with Prettier
+
 ## [0.0.3] — 2023-12-19
 
 - Add eslint-plugin-tailwindcss
