@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.3] — 2023-12-19
+
+- Add eslint-plugin-tailwindcss
+- Re-added prettier
+
 ## [0.0.2] — 2023-12-19
 
 - Add eslint-plugin-tailwindcss

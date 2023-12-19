@@ -82,6 +82,7 @@ module.exports = {
   },
 
   plugins: [
+    "prettier",
     "sort-destructure-keys",
     "typescript-sort-keys",
     "sort-keys-fix",
@@ -457,6 +458,29 @@ module.exports = {
       },
     ],
     "prefer-const": 1,
+    'prettier/prettier': [
+      1,
+      {
+        arrowParens: 'always',
+        bracketSameLine: false,
+        bracketSpacing: true,
+        embeddedLanguageFormatting: 'auto',
+        htmlWhitespaceSensitivity: 'css',
+        insertPragma: false,
+        jsxSingleQuote: false,
+        printWidth: 80,
+        proseWrap: 'preserve',
+        quoteProps: 'as-needed',
+        requirePragma: false,
+        semi: true,
+        singleAttributePerLine: true,
+        singleQuote: false,
+        tabWidth: 2,
+        trailingComma: 'all',
+        useTabs: false,
+        vueIndentScriptAndStyle: false,
+      },
+    ],
     "react/jsx-no-undef": 0,
     "react/jsx-sort-props": 1,
     "react/no-unknown-property": 0,
@@ -486,6 +510,14 @@ module.exports = {
       },
     ],
     "sort-keys-fix/sort-keys-fix": 1,
+    "tailwindcss/no-custom-classname": [
+      2,
+      {
+        "whitelist": [
+          "bg\\-gradient\\-(conic|radial)"
+        ]
+      }
+    ],
     "typescript-sort-keys/interface": 1,
   },
   settings: {
