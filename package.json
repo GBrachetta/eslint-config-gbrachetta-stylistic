@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gbrachetta-stylistic",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Thorough TSLint configuration for React-based projects based on airbnb and @stylistic configs with many additional rules such as autofixable sorting, etc.",
   "author": "Guillermo Brachetta <brachetta@me.com> (https://github.com/gbrachetta/)",
   "files": [

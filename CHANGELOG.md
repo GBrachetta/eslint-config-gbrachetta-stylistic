@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.9] — 2023-12-19
+
+- Minor replacement
+
 ## [0.0.8] — 2023-12-19
 
 - Add eslint-plugin-unicorn
