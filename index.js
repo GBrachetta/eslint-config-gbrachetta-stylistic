@@ -33,7 +33,7 @@ module.exports = {
         "@typescript-eslint/no-extra-non-null-assertion": "warn",
         "@typescript-eslint/no-extraneous-class": "warn",
         "@typescript-eslint/no-unused-vars": [
-          "warn",
+          "off",
           { argsIgnorePattern: "^_" },
         ],
         "@typescript-eslint/no-use-before-define": [
@@ -92,6 +92,7 @@ module.exports = {
     "eslint-plugin-import",
     "eslint-plugin-react",
     "@stylistic",
+    "unused-imports",
   ],
 
   rules: {
@@ -401,7 +402,7 @@ module.exports = {
     ],
     "@stylistic/wrap-regex": 1,
     "@stylistic/yield-star-spacing": [1, "after"],
-    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/no-unused-vars": 0,
     "css-import-order/css-import-order": 1,
     "import/order": [
       1,
@@ -500,6 +501,16 @@ module.exports = {
           ref: false,
           res: false,
         },
+      },
+    ],
+    "unused-imports/no-unused-imports": 1,
+    "unused-imports/no-unused-vars": [
+      1,
+      {
+        args: "after-used",
+        argsIgnorePattern: "^_",
+        vars: "all",
+        varsIgnorePattern: "^_",
       },
     ],
   },

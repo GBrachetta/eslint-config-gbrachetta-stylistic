@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.10] — 2023-12-22
+
+- Add `no-unused-imports` plugin
+
 ## [0.0.9] — 2023-12-19
 
 - Minor replacement
